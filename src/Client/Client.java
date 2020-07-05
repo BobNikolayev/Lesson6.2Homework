@@ -25,7 +25,7 @@ public class Client {
             outText = new DataOutputStream(socket.getOutputStream());
 
             inText = new DataInputStream(socket.getInputStream());
-
+//Тред входящих сообщений
             Thread inMsgThread = new Thread(()->{
                 while(true){
                     String inMsg = null;

@@ -30,7 +30,7 @@ public class Server {
             inText = new DataInputStream(socket.getInputStream());
 
             outText = new DataOutputStream(socket.getOutputStream());
-
+//Тред входящих сообщений
             Thread inMsgThread = new Thread(()->{
                 while(true){
                     String inMsg = null;
